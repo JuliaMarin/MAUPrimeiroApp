@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIeqSegundoGrau.MainPage">
+
+    <StackLayout>
+        <ScrollView>
+            <Label Text="Equação de 2º Grau"
+               FontSize="Title"
+               HorizontalTextAlignment="Center"
+               TextColor="#FFF"
+              BackgroundColor="Orange"> </Label>
+
+            <Label Text="ax²+bx+c=0"
+               FontSize="Body"
+               HorizontalTextAlignment="Center"></Label>
+
+            <Label Text="Digite o valor de a:"></Label>
+            <Entry x:Name="etyValorA"></Entry>
+
+            <Label Text="Digite o valor de b:"></Label>
+            <Entry x:Name="etyValorB"></Entry>
+
+            <Label Text="Digite o valor de c:"></Label>
+            <Entry x:Name="etyValorC"></Entry>
+
+            <Button Text="CALCULAR"
+                BackgroundColor="Red"
+                x:Name="btnCalcular"
+                Clicked="btnCalcular_Clicked"></Button>
+        </ScrollView>
+    </StackLayout>
+
+
+</ContentPage>
